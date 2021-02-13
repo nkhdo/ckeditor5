@@ -15,15 +15,45 @@
 <h1>CKEditor 5 – balloon block editor build – development sample</h1>
 
 <div id="editor">
-	<h2>Sample</h2>
+	## The Markdown language
 
-	<p>This is an instance of the <a href="https://ckeditor.com/docs/ckeditor5/latest/builds/guides/overview.html#balloon-editor">balloon block editor build</a>.</p>
+Markdown is a lightweight markup language that you can use to add formatting elements to plain text documents. Created by [John Gruber](https://daringfireball.net/projects/markdown/) in ~2003~2004, Markdown is now one of the world’s most popular markup languages.
 
-	<figure class="image">
-		<img src="../tests/manual/sample.jpg" alt="Autumn fields" />
-	</figure>
+---
 
-	<p>You can use this sample to validate whether your <a href="https://ckeditor.com/docs/ckeditor5/latest/builds/guides/development/custom-builds.html">custom build</a> works fine.</p>
+## Editing with Markdown output
+
+The [CKEditor 5 WYSIWYG](https://ckeditor.com/) editor lets you use this flexible yet simple markup language in the GitHub flavor. The editor-produced Markdown output supports the most important features, like [links](https://ckeditor.com/), **different** kinds of _emphasis_, `inline code formatting` or code blocks:
+
+```css
+p {
+  text-align: center;
+  color: red;
+}
+```
+
+## Formatting blocks with Markdown
+
+Markdown can be used to create various block-level features, such as:
+
+*   Block quotes
+*   Headings
+    1.  Heading 1
+    2.  Heading 2
+    3.  Heading 3
+*   Lists, including nested ones
+    *   Numbered lists
+    *   Bulleted lists
+
+## Support for tables in Markdown
+
+Bear in mind that Markdown has only very basic support for tables, so things like table styles or merged cells will not work.
+
+|   | Income | Revenue |
+| --- | --- | --- |
+| Walker 3 | $104.000 | 15% |
+| Stroller | $12.000 | 10% |
+| Runner | $97.500 | 15% |
 </div>
 
 <script src="../build/ckeditor.js"></script>
